@@ -14,4 +14,6 @@ app.get('/', (req, res) => {
   );
 });
 
-app.listen(5000); 
+//heroku environment variables
+const PORT = process.env.PORT;
+app.listen(PORT); 
